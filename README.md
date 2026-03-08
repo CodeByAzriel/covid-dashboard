@@ -16,5 +16,19 @@ It shows current COVID-19 statistics for any country, historical trends, and top
 1. Clone the repository:
 
 ```bash
+# Clone the repository
 git clone https://github.com/CodeByAzriel/covid-dashboard.git
 cd covid-dashboard
+
+# Create a virtual environment (optional but recommended)
+python -m venv venv
+.\venv\Scripts\activate   # Windows
+# source venv/bin/activate # macOS/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+
+# Open your browser at http://localhost:8501 to see the dashboard
